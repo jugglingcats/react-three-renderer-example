@@ -3,6 +3,7 @@ import { Link } from 'react-router';
 import ExampleViewer from './ExampleViewer';
 
 import SimpleExample from './Simple/index';
+import LineSegments from './LineSegments/index';
 import ManualRenderingExample from './ManualRendering/index';
 import ClothExample from './AnimationCloth/index';
 import GeometriesExample from './Geometries/index';
@@ -15,6 +16,12 @@ import BenchmarkRotatingCubes from './Benchmark/RotatingCubes';
 import RotatingCubesDirectUpdates from './Benchmark/RotatingCubesDirectUpdates';
 
 const examples = [
+  {
+    name: 'Line segments issue',
+    component: LineSegments,
+    url: 'LineSegments/index',
+    slug: 'webgl_lines',
+  },
   {
     name: 'Simple',
     component: SimpleExample,
